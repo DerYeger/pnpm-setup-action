@@ -1,0 +1,47 @@
+name: 'pNPM Setup'
+description: 'GitHub Action for setting up a pNPM environment. Caches dependencies for reduced execution times.'
+author: 'DerYeger'
+branding:
+  icon: 'package'
+  color: 'orange'
+
+inputs:
+  node-version:
+    description: 'The version of Node.js that will be used'
+    required: true
+
+outputs:
+  cache-hit:
+    description: 'Indicates a cache hit'
+    value: ${{ steps.cache.outputs.cache-hit }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Setup Node.js
+      uses: actions/setup-node@v3.5.1
+      with:
+        node-version: ${{inputs.node_version}}
+    - uses: pnpm/action-setup@v2.2.4
+      name: Install pNPM
+      id: pnpm-install
+      with:
+        version: 7
+        run_install: false
+    - name: Get pNPM store directory
+      id: pnpm-cache
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+    - uses: actions/cache@v3
+      name: Setup pNPM cache
+      with:
+        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile
+      shell: bash

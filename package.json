@@ -1,0 +1,15 @@
+{
+  "name": "pnpm-setup-action",
+  "version": "2.0.3",
+  "description": "GitHub Action for setting up a pNPM environment. Caches dependencies for reduced execution times.",
+  "repository": "https://github.com/DerYeger/pnpm-setup-action.git",
+  "author": "Jan Müller <janmueller3698@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "pretty": "prettier --write \"./**/*.{js,json,html,scss,ts,vue,yml}\""
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
+}
