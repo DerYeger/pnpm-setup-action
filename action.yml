@@ -38,16 +38,12 @@ runs:
     - uses: actions/cache@v3
       name: Setup pNPM cache
       with:
-        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+        path: |
+          ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          ~/.cache
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
           ${{ runner.os }}-pnpm-store-
-    - name: Cache ~/.cache
-      id: cache
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache
-        key: ${{ runner.os }}-cache-${{ hashFiles('**/pnpm-lock.yaml') }}
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
       shell: bash
