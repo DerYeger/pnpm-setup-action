@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.1.0...v1.2.0) (2022-11-12)
+
+
+### Features
+
+* use single cache action ([549c61c](https://github.com/DerYeger/pnpm-setup-action/commit/549c61c3a52aaf147ac4578d4eed08e749321b41))
+
 # [1.1.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.0.0...v1.1.0) (2022-11-02)
 
 
