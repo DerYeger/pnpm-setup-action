@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/DerYeger/pnpm-setup-action/compare/v1.2.0...v1.2.1) (2022-11-28)
+
+
+### Bug Fixes
+
+* pass `node-version` correctly ([db16c46](https://github.com/DerYeger/pnpm-setup-action/commit/db16c465959b83295e68d1310d4349ce259d88c2))
+
 # [1.2.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.1.0...v1.2.0) (2022-11-12)
 
 
