@@ -36,14 +36,16 @@ runs:
       run: |
         echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
     - uses: actions/cache@v3
-      name: Setup pNPM cache
+      name: Setup cache
       with:
         path: |
           ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          ${{ github.workspace }}/.next/cache
+          ${{ github.workspace }}/*/*/.next/cache
           ~/.cache
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
           ${{ runner.os }}-pnpm-store-
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: pnpm install --frozen-lockfile --prefer-offline
       shell: bash
