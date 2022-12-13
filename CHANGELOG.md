@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.2.1...v1.3.0) (2022-12-13)
+
+
+### Features
+
+* include `next.js` cache ([30f1759](https://github.com/DerYeger/pnpm-setup-action/commit/30f1759f04555400a0ffb26317204f4dee1749b7))
+
 ## [1.2.1](https://github.com/DerYeger/pnpm-setup-action/compare/v1.2.0...v1.2.1) (2022-11-28)
 
 
