@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.3.0...v2.0.0) (2023-04-09)
+
+
+### Features
+
+* update pnpm to v8 ([38a4669](https://github.com/DerYeger/pnpm-setup-action/commit/38a4669989c5e381e77b00f42b02b053e8625c5c))
+
+
+### BREAKING CHANGES
+
+* Update pnpm to v8
+
 # [1.3.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.2.1...v1.3.0) (2022-12-13)
 
 
