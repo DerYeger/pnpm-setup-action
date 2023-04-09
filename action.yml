@@ -28,7 +28,7 @@ runs:
       name: Install pNPM
       id: pnpm-install
       with:
-        version: 7
+        version: 8
         run_install: false
     - name: Get pNPM store directory
       id: pnpm-cache
