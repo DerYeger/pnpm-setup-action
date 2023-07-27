@@ -22,6 +22,7 @@ steps:
 ### Inputs
 
 - `node-version`: The version of Node.js that will be used.
+- `node-version-file`: The path to a file containing the Node.js version.
 
 ### Outputs
 

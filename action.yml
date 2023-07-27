@@ -8,7 +8,10 @@ branding:
 inputs:
   node-version:
     description: 'The version of Node.js that will be used'
-    required: true
+    required: false
+  node-version-file:
+    description: 'The path to the file containing the Node.js version'
+    required: false
 
 outputs:
   cache-hit:
@@ -24,6 +27,7 @@ runs:
       uses: actions/setup-node@v3.5.1
       with:
         node-version: ${{inputs.node-version}}
+        node-version-file: ${{inputs.node-version-file}}
     - uses: pnpm/action-setup@v2.2.4
       name: Install pNPM
       id: pnpm-install
