@@ -1,3 +1,18 @@
+# [3.0.0](https://github.com/DerYeger/pnpm-setup-action/compare/v2.0.0...v3.0.0) (2023-07-27)
+
+
+* feat!: use `packageManager` field for pnpm version ([99a2474](https://github.com/DerYeger/pnpm-setup-action/commit/99a247444a23983853eb5b284540cfd5899753de))
+
+
+### Features
+
+* support `node-version-file` ([88797d4](https://github.com/DerYeger/pnpm-setup-action/commit/88797d459e73474fb923b6804b5c0f1e710b622e))
+
+
+### BREAKING CHANGES
+
+* Setting the packageManager field is now required
+
 # [2.0.0](https://github.com/DerYeger/pnpm-setup-action/compare/v1.3.0...v2.0.0) (2023-04-09)
 
 

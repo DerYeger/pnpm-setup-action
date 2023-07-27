@@ -1,6 +1,6 @@
 {
   "name": "pnpm-setup-action",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "GitHub Action for setting up a pNPM environment. Caches dependencies for reduced execution times.",
   "repository": "https://github.com/DerYeger/pnpm-setup-action.git",
   "author": "Jan Müller <janmueller3698@gmail.com>",
