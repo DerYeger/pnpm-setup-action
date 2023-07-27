@@ -5,11 +5,13 @@
 ## Features
 
 - 🔽 Performs a **checkout** using [actions/checkout](https://github.com/actions/checkout).
-- ⚒️ Sets up a **Node.js environment** using the specified `node-version` with [actions/setup-node](https://github.com/actions/setup-node).
+- ⚒️ Sets up a **Node.js environment** using the specified `node-version` (or `node-version-file`) with [actions/setup-node](https://github.com/actions/setup-node).
 - 💽 **Caches** and retrieves packages for reduced execution time. Based on [actions/cache](https://github.com/actions/cache).
 - ⌛ Runs `pnpm install` with the cached packages.
 
 ## Usage
+
+> Ensure that the `packageManager` field in your root `package.json` is set to your desired `pnpm` version.
 
 ```yml
 steps:
