@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/DerYeger/pnpm-setup-action/compare/v3.0.0...v3.1.0) (2024-02-11)
+
+
+### Features
+
+* **deps:** update to node v20 actions ([504ac8d](https://github.com/DerYeger/pnpm-setup-action/commit/504ac8d2ee85617870e595b5ccad793dd4e8d086))
+
 # [3.0.0](https://github.com/DerYeger/pnpm-setup-action/compare/v2.0.0...v3.0.0) (2023-07-27)
 
 
