@@ -5,7 +5,7 @@
   "repository": "https://github.com/DerYeger/pnpm-setup-action.git",
   "author": "Jan Müller <janmueller3698@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@9.0.4",
   "private": true,
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,json,html,scss,ts,vue,yml}\""
