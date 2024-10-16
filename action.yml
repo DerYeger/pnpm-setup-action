@@ -24,7 +24,7 @@ runs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Setup Node.js
-      uses: actions/setup-node@v4.0.2
+      uses: actions/setup-node@v4.0.4
       with:
         node-version: ${{inputs.node-version}}
         node-version-file: ${{inputs.node-version-file}}
