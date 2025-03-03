@@ -24,11 +24,11 @@ runs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Setup Node.js
-      uses: actions/setup-node@v4.1.0
+      uses: actions/setup-node@v4.2.0
       with:
         node-version: ${{inputs.node-version}}
         node-version-file: ${{inputs.node-version-file}}
-    - uses: pnpm/action-setup@v4.0.0
+    - uses: pnpm/action-setup@v4.1.0
       name: Install pNPM
       id: pnpm-install
       with:
