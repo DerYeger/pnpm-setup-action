@@ -23,16 +23,16 @@ runs:
   steps:
     - name: Checkout
       uses: actions/checkout@master
-    - name: Setup Node.js
-      uses: actions/setup-node@v5.0.0
-      with:
-        node-version: ${{inputs.node-version}}
-        node-version-file: ${{inputs.node-version-file}}
     - uses: pnpm/action-setup@v4.1.0
       name: Install pNPM
       id: pnpm-install
       with:
         run_install: false
+    - name: Setup Node.js
+      uses: actions/setup-node@v5.0.0
+      with:
+        node-version: ${{inputs.node-version}}
+        node-version-file: ${{inputs.node-version-file}}
     - name: Get pNPM store directory
       id: pnpm-cache
       shell: bash
