@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/DerYeger/pnpm-setup-action/compare/v3.1.0...v3.1.1) (2025-09-22)
+
+
+### Bug Fixes
+
+* run pnpm install first ([6e87b28](https://github.com/DerYeger/pnpm-setup-action/commit/6e87b282562084a1bf3ab1a325c9f6d598bce345))
+
 # [3.1.0](https://github.com/DerYeger/pnpm-setup-action/compare/v3.0.0...v3.1.0) (2024-02-11)
 
 
