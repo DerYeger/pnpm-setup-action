@@ -23,13 +23,13 @@ runs:
   steps:
     - name: Checkout
       uses: actions/checkout@master
-    - uses: pnpm/action-setup@v6.0.0
+    - uses: pnpm/action-setup@v6.0.3
       name: Install pNPM
       id: pnpm-install
       with:
         run_install: false
     - name: Setup Node.js
-      uses: actions/setup-node@v6.3.0
+      uses: actions/setup-node@v6.4.0
       with:
         node-version: ${{inputs.node-version}}
         node-version-file: ${{inputs.node-version-file}}
