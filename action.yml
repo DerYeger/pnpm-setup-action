@@ -23,7 +23,7 @@ runs:
   steps:
     - name: Checkout
       uses: actions/checkout@master
-    - uses: pnpm/action-setup@v6.0.3
+    - uses: pnpm/action-setup@v6.0.5
       name: Install pNPM
       id: pnpm-install
       with:
