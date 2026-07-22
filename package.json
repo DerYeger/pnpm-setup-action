@@ -5,12 +5,12 @@
   "repository": "https://github.com/DerYeger/pnpm-setup-action.git",
   "author": "Jan Müller <janmueller3698@gmail.com>",
   "license": "MIT",
-  "packageManager": "pnpm@11.12.0",
+  "packageManager": "pnpm@11.16.0",
   "private": true,
   "scripts": {
     "pretty": "prettier --write \"./**/*.{js,json,html,scss,ts,vue,yml}\""
   },
   "devDependencies": {
-    "prettier": "3.9.5"
+    "prettier": "3.9.6"
   }
 }
